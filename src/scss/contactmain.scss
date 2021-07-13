@@ -1,0 +1,193 @@
+@import "core/variables";
+@import "core/reset";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/main/hero";
+@import "layout/main/team";
+@font-face {
+  font-family: Rubik;
+  src: url(Rubik.woff);
+}
+
+:root {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: initial;
+}
+
+.hero {
+  background-image: url("../img/contacto.jpeg");
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 300px;
+  padding-bottom: 50px;
+  background-size: cover;
+  @media all and (min-width: 768px) {
+  }
+  @media all and (min-width: 1200px) {
+    height: 400px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 15px;
+  padding-top: 30px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  @media all and (min-width: 768px) {
+    max-width: 442px;
+  }
+  @media all and (min-width: 1200px) {
+    padding-top: 45px;
+    width: 100vw;
+    align-items: center;
+  }
+}
+
+.title {
+  line-height: 24px;
+  padding-bottom: 15px;
+  color: $color-title;
+  text-transform: uppercase;
+  font-family: "Rubik", sans-serif;
+}
+
+.description {
+  @media all and (min-width: 768px) {
+    max-width: 442px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.obligatory {
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+}
+
+.overview {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  color: $color-text;
+  line-height: 24px;
+  margin-right: auto;
+  margin-left: auto;
+  @media all and (min-width: 768px) {
+    width: 100vw;
+    max-width: 442px;
+  }
+  @media all and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 100vw;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  min-width: 290px;
+  font-size: 14px;
+  color: $color-text;
+
+  padding-top: 60px;
+  @media all and (min-width: 768px) {
+    width: 100vw;
+    padding-bottom: 30px;
+    max-width: 442px;
+  }
+  @media all and (min-width: 1200px) {
+    display: flex;
+    max-width: 601px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+}
+
+#id {
+  width: 390px;
+}
+.asterisk {
+  color: $color-title;
+}
+
+label {
+  text-align: left;
+  padding-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 100%;
+}
+
+input[type="email"] {
+  @media all and (min-width: 1200px) {
+    width: 200px;
+    margin-right: 45px;
+  }
+}
+
+input[type="tel"] {
+  @media all and (min-width: 1200px) {
+    width: 150px;
+    flex-grow: 1;
+  }
+}
+
+input[type="submit"] {
+  background-color: $color-title;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Open Sans" sans-serif;
+  height: 45px;
+  min-width: 290px;
+  padding: 12px 20px;
+  border-radius: 5px;
+  @media all and (min-width: 768px) {
+    max-width: 206px;
+    margin-left: auto;
+  }
+}
+
+.box {
+  border: solid lightgray 1px;
+  height: 45px;
+  margin-bottom: 15px;
+}
+
+.box2 {
+  border: solid lightgray 1px;
+  height: 105px;
+  margin-bottom: 30px;
+}
+
+.row {
+  @media all and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.row_email {
+  @media all and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    margin-right: 22px;
+    flex-grow: 2;
+  }
+}
+
+.row_phone {
+  @media all and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    margin-left: 22px;
+    flex-grow: 1;
+  }
+}

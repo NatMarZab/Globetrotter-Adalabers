@@ -1,0 +1,75 @@
+@import "core/variables";
+@import "core/reset";
+@import "components/code";
+@import "components/links";
+@import "layout/page";
+@import "layout/header";
+@import "layout/main/hero";
+@import "layout/main/team";
+@import "layout/main/swot";
+@import "layout/main/whoweare";
+@import "layout/footer";
+@import "pages/index";
+@font-face {
+  font-family: Rubik;
+  src: url(Rubik.woff);
+}
+
+:root {
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --color-text: #54585a;
+  --color-title: #099d8d;
+  text-transform: initial;
+}
+/*.center-column {
+  min-width: 290px;
+  @media all and (min-width: 768px) {
+    min-width: 678px;
+  }
+  @media all and (min-width: 1200px) {
+    min-width: 924px;
+  }
+}*/
+
+/*estilos de ordenador*/
+@media all and (min-width: 1200px) {
+  .title1 {
+    line-height: 45px;
+  }
+  .team {
+    padding-top: 45px;
+    padding-bottom: 60px;
+    width: 601px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 24px;
+  }
+  .swot {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    padding-top: 45px;
+    padding-bottom: 60px;
+    line-height: 24px;
+  }
+
+  .strengths {
+    padding: 30px;
+    padding-right: 22.5px;
+  }
+
+  .weaknesses {
+    padding: 30px;
+    padding-left: 22.5px;
+  }
+  .title2 {
+    padding-top: 45px;
+    padding-right: 32px;
+  }
+  .title3 {
+    padding-top: 45px;
+    padding-left: 6.8px;
+  }
+}
